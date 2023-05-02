@@ -1,10 +1,13 @@
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-app.MapGet("/jamelao", () => "Jamelão é muito bom!");
 app.MapGet("/", () => 
 {
-    return "Hello World!";
+    return Results.Ok($"Hello World");
+});
+app.MapGet("/name/{nome}", (string nome) => 
+{
+    return Results.Ok($"Hello World {nome}");
 });
 
 app.Run();
