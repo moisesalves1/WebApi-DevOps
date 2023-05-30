@@ -12,8 +12,15 @@ namespace Blog.Controllers
         public async Task<IActionResult> GetAsync(
             [FromServices]BlogDataContext context)
         {
-            var categories = await context.Categories.ToListAsync();
-            return Ok(categories);
+            try
+            {
+                var categories = await context.Categories.ToListAsync();
+                return Ok(categories);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "05X04 - Falha interna no servidor");
+            }
         }
 
         [HttpGet("v1/categories/{id:int}")]
@@ -21,12 +28,19 @@ namespace Blog.Controllers
             [FromRoute] int id,
             [FromServices] BlogDataContext context)
         {
-            var category = await context.Categories.FirstOrDefaultAsync(x=>x.Id == id);
+            try
+            {
+                var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (category == null)
-                return NotFound();
+                if (category == null)
+                    return NotFound();
 
-            return Ok(category);
+                return Ok(category);
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "05X05 - Falha interna no servidor");
+            }
         }
 
         [HttpPost("v1/categories")]
@@ -58,18 +72,29 @@ namespace Blog.Controllers
             [FromServices] BlogDataContext context)
         {
 
-            var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
+            try
+            {
+                var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (category == null)
-                return NotFound();
+                if (category == null)
+                    return NotFound();
 
-            category.Name = model.Name;
-            category.Slug = model.Slug;
+                category.Name = model.Name;
+                category.Slug = model.Slug;
 
-            context.Categories.Update(category);
-            await context.SaveChangesAsync();
+                context.Categories.Update(category);
+                await context.SaveChangesAsync();
 
-            return Ok(model);
+                return Ok(model);
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode(500, "05XE8 - Não foi possível alterar a categoria");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "05X11 - Falha interna no servidor");
+            }
         }
 
         [HttpDelete("v1/categories/{id:int}")]
@@ -77,16 +102,27 @@ namespace Blog.Controllers
             [FromRoute] int id,
             [FromServices] BlogDataContext context)
         {
+            try
+            {
 
-            var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
+                var category = await context.Categories.FirstOrDefaultAsync(x => x.Id == id);
 
-            if (category == null)
-                return NotFound();
+                if (category == null)
+                    return NotFound();
 
-            context.Categories.Remove(category);
-            await context.SaveChangesAsync();
+                context.Categories.Remove(category);
+                await context.SaveChangesAsync();
 
-            return Ok(category);
+                return Ok(category);
+            }
+            catch (DbUpdateException ex)
+            {
+                return StatusCode(500, "05XE7 - Não foi possível excluir a categoria");
+            }
+            catch (Exception e)
+            {
+                return StatusCode(500, "05X12 - Falha interna no servidor");
+            }
         }
     }
 }
