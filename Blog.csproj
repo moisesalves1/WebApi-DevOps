@@ -17,4 +17,10 @@
     <PackageReference Include="SecureIdentity" Version="1.0.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

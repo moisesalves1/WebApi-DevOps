@@ -20,8 +20,8 @@ LoadConfiguration(app);
 
 app.UseAuthentication();
 app.UseAuthorization();
+app.UseStaticFiles();
 app.MapControllers();
-
 app.Run();
 
 void LoadConfiguration(WebApplication app)
@@ -31,7 +31,7 @@ void LoadConfiguration(WebApplication app)
     Configuration.ApiKey = app.Configuration.GetValue<string>("ApiKey");
 
     var smtp = new Configuration.SmtpConfiguration();
-    app.Configuration.GetSection("Smtp").Bind(smtp);
+    app.Configuration.GetSection("SmtpConfiguration").Bind(smtp);
     Configuration.Smtp = smtp;
 }
 
@@ -70,4 +70,5 @@ void ConfigureServices(WebApplicationBuilder builder)
 
     builder.Services.AddDbContext<BlogDataContext>();
     builder.Services.AddTransient<TokenService>(); // Sempre cria um novo
+    builder.Services.AddTransient<EmailService>();
 }
