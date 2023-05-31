@@ -3,8 +3,8 @@
     public class ResultViewModel <T>
     {
         public ResultViewModel(T data, List<string> errors)
-        { 
-            Data = data,
+        {
+            Data = data;
             Errors = errors;  
         }
         public ResultViewModel(T data)
