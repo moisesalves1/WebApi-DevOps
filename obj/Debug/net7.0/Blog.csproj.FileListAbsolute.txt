@@ -69,3 +69,4 @@ C:\dev\crud\Blog\obj\Debug\net7.0\refint\Blog.dll
 C:\dev\crud\Blog\obj\Debug\net7.0\Blog.pdb
 C:\dev\crud\Blog\obj\Debug\net7.0\Blog.genruntimeconfig.cache
 C:\dev\crud\Blog\obj\Debug\net7.0\ref\Blog.dll
+C:\dev\crud\Blog\bin\Debug\net7.0\SecureIdentity.dll

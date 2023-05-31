@@ -5,6 +5,8 @@ using Blog.Services;
 using Blog.ViewModels;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using SecureIdentity.Password;
 
 namespace Blog.Controllers
 {
@@ -27,7 +29,27 @@ namespace Blog.Controllers
 
             };
 
-            return Ok();
+            var password = PasswordGenerator.Generate(25);
+            user.PasswordHash = PasswordHasher.Hash(password);
+
+            try
+            {
+                await context.Users.AddAsync(user);
+                await context.SaveChangesAsync();
+
+                return Ok(new ResultViewModel<dynamic>(new 
+                {
+                    user = user.Email, password
+                }));
+            }
+            catch (DbUpdateException)
+            {
+                return StatusCode(400, new ResultViewModel<string>("05X99 - Este email já está cadastrado"));
+            }
+            catch
+            {
+                return StatusCode(500, new ResultViewModel<string>("05X04 - Falha interna no servidor"));
+            }
 
         }
 
