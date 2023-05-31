@@ -8,6 +8,7 @@ C:\dev\crud\Blog\bin\Debug\net7.0\Blog.pdb
 C:\dev\crud\Blog\bin\Debug\net7.0\Azure.Core.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Azure.Identity.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Humanizer.dll
+C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.Bcl.AsyncInterfaces.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.Data.SqlClient.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.dll
@@ -27,6 +28,7 @@ C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\dev\crud\Blog\bin\Debug\net7.0\SecureIdentity.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\System.CodeDom.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\System.Drawing.Common.dll
