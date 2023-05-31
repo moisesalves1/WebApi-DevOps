@@ -17,6 +17,7 @@ namespace Blog.Services
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new (ClaimTypes.Name, "andrebaltieri"), //User.Identity.Name
+                    new (ClaimTypes.Role, "user"),
                     new (ClaimTypes.Role, "admin"), //User.IsInRole
                     new ("fruta", "banana")
                 }),
