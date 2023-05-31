@@ -28,6 +28,7 @@ C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.IdentityModel.Tokens.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.SqlServer.Server.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Microsoft.Win32.SystemEvents.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\dev\crud\Blog\bin\Debug\net7.0\SecureIdentity.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\System.CodeDom.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\System.Configuration.ConfigurationManager.dll
 C:\dev\crud\Blog\bin\Debug\net7.0\System.Drawing.Common.dll
@@ -69,4 +70,3 @@ C:\dev\crud\Blog\obj\Debug\net7.0\refint\Blog.dll
 C:\dev\crud\Blog\obj\Debug\net7.0\Blog.pdb
 C:\dev\crud\Blog\obj\Debug\net7.0\Blog.genruntimeconfig.cache
 C:\dev\crud\Blog\obj\Debug\net7.0\ref\Blog.dll
-C:\dev\crud\Blog\bin\Debug\net7.0\SecureIdentity.dll
