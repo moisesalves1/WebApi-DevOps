@@ -10,7 +10,7 @@ namespace Blog.Controllers
         [HttpPost("v1/login")]
         public IActionResult Login([FromServices]TokenService tokenService)
         {
-            var token = tokenService.GenerateToken(user);
+            var token = tokenService.GenerateToken(null);
             return Ok(token);
         }
     }
