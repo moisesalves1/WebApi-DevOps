@@ -1,6 +1,7 @@
 C:\dev\crud\Blog\bin\Debug\net7.0\appsettings.Development.json
-C:\dev\crud\Blog\bin\Debug\net7.0\appsettings.json
+C:\dev\crud\Blog\bin\Debug\net7.0\Blog.staticwebassets.runtime.json
 C:\dev\crud\Blog\bin\Debug\net7.0\Blog.exe
+C:\dev\crud\Blog\bin\Debug\net7.0\appsettings.json
 C:\dev\crud\Blog\bin\Debug\net7.0\Blog.deps.json
 C:\dev\crud\Blog\bin\Debug\net7.0\Blog.runtimeconfig.json
 C:\dev\crud\Blog\bin\Debug\net7.0\Blog.dll
