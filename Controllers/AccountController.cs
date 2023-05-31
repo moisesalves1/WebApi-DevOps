@@ -137,7 +137,7 @@ namespace Blog.Controllers
                 return StatusCode(500, new ResultViewModel<string>("05X04 - Falha interna no servidor"));
             }
 
-            return Ok(new ResultViewModel<string>("Imagem alterado com sucesso!", null));
+            return Ok(new ResultViewModel<string>("Imagem alterada com sucesso!", null));
         }
 
 
