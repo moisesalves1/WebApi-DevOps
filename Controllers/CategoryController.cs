@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Blog.Models;
 using Blog.ViewModels;
+using Blog.Extensions;
 
 namespace Blog.Controllers
 {
@@ -50,7 +51,7 @@ namespace Blog.Controllers
             [FromServices] BlogDataContext context)
         {
             if (!ModelState.IsValid)
-                return BadRequest();
+                return BadRequest(new ResultViewModel<Category>(ModelState.GetErrors()));
 
             try
             {
