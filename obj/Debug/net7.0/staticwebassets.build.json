@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "eAqqyA56CAcc77rWcjxmt/TCZfWLOHnPs0XhNyPfCZI=",
+  "Hash": "XvkZilFPsgElqJFcopwKvfrVv+7jRVV4W4EWbBpbM2g=",
   "Source": "Blog",
   "BasePath": "_content/Blog",
   "Mode": "Default",
@@ -15,5 +15,23 @@
       "Pattern": "**"
     }
   ],
-  "Assets": []
+  "Assets": [
+    {
+      "Identity": "C:\\dev\\crud\\Blog\\wwwroot\\Images\\8e7b2d79-df0e-4677-bbb4-8427f3fcfe4f.jpg",
+      "SourceId": "Blog",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\dev\\crud\\Blog\\wwwroot\\",
+      "BasePath": "_content/Blog",
+      "RelativePath": "Images/8e7b2d79-df0e-4677-bbb4-8427f3fcfe4f.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\8e7b2d79-df0e-4677-bbb4-8427f3fcfe4f.jpg"
+    }
+  ]
 }
