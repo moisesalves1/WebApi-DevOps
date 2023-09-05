@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XvkZilFPsgElqJFcopwKvfrVv+7jRVV4W4EWbBpbM2g=",
+  "Hash": "bbpnVtyLEIVBujuksT5/xN1pPv8NyNYwwNuJx6jA7ek=",
   "Source": "Blog",
   "BasePath": "_content/Blog",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Blog\\wwwroot",
       "Source": "Blog",
-      "ContentRoot": "C:\\dev\\crud\\Blog\\wwwroot\\",
+      "ContentRoot": "C:\\dev\\Balta\\Blog\\wwwroot\\",
       "BasePath": "_content/Blog",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\dev\\crud\\Blog\\wwwroot\\Images\\8e7b2d79-df0e-4677-bbb4-8427f3fcfe4f.jpg",
+      "Identity": "C:\\dev\\Balta\\Blog\\wwwroot\\Images\\8e7b2d79-df0e-4677-bbb4-8427f3fcfe4f.jpg",
       "SourceId": "Blog",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\dev\\crud\\Blog\\wwwroot\\",
+      "ContentRoot": "C:\\dev\\Balta\\Blog\\wwwroot\\",
       "BasePath": "_content/Blog",
       "RelativePath": "Images/8e7b2d79-df0e-4677-bbb4-8427f3fcfe4f.jpg",
       "AssetKind": "All",
